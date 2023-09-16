@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.productos p {
+    font-style: italic;
+    padding-left: 5px;
+    color:#474540;
+}
+
+.navbar {
+    grid-area: header;
+    background-color: #b5afa4;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+menu {
+    grid-area: menu;
+    background-color: #f3ede1;
+    min-height: 100vh;
+}
+
+main {
+    grid-area: main; 
+} 
+    
+footer {
+    grid-area: footer;
+}
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "header header" "menu main" "footer footer";
+    gap: 10px; 
+}
+
+.titulo{
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.contenido-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+.productos {
+    margin-top: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    gap: 3%;
+    display: flex;
+}
+
+.productos :hover {
+    color:#b5afa4;
+}
+
+.galeria {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galeria img { 
+    border: 1px solid #ccc; 
+    width: 100%;
+}  
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #585142;
+    margin: 10px;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    width: 100%;
+    background-color: #f3ede1;
+    padding: 10px;
+    border: gray;
+    transition: 0.125s all ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#bec1bb;
+}
+
+footer {
+    text-align: center;
+    background-color: #b5afa4;
+    padding: 15px;
+    color: white;
+}
