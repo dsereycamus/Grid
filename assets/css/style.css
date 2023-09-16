@@ -18,7 +18,25 @@
     color: white;
     text-align: center;
     padding: 25px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.navbar-buscador {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .navbar-titulo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-transform: uppercase;
+  }
+  .navbar-placeholder {
+    display: block;
+    height: 32px;
+  }
 
 menu {
     grid-area: menu;
